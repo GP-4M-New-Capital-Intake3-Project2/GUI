@@ -1,0 +1,4 @@
+/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CMakeFiles/FOTA_ver1.dir
+/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CMakeFiles/FOTA_ver1_autogen.dir

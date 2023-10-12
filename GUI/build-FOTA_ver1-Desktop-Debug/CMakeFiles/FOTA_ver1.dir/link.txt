@@ -1,0 +1,1 @@
+/usr/bin/aarch64-linux-gnu-g++ -g CMakeFiles/FOTA_ver1.dir/FOTA_ver1_autogen/mocs_compilation.cpp.o CMakeFiles/FOTA_ver1.dir/main.cpp.o CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.o CMakeFiles/FOTA_ver1.dir/fota.cpp.o -o FOTA_ver1  /usr/lib/aarch64-linux-gnu/libQt5Widgets.so.5.15.2 /usr/lib/aarch64-linux-gnu/libQt5Gui.so.5.15.2 /usr/lib/aarch64-linux-gnu/libQt5Core.so.5.15.2 
