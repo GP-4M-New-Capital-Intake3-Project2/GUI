@@ -7,6 +7,8 @@
 #include <QString>
 #include <QDebug>
 #include <QTextStream>
+#include <QMessageBox>
+
 namespace Ui {
 class fota;
 }
@@ -21,6 +23,12 @@ public:
 
 private slots:
     void on_Server_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_LED_Button_clicked();
+
+    void on_ShowFolderContent_clicked();
 
 private:
     Ui::fota *ui;

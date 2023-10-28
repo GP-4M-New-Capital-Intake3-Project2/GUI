@@ -1,6 +1,9 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-
+#include <QDesktopServices>
+#include <QUrl>
+#include <QProcess>
+#include <QDir>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -31,8 +34,9 @@ void MainWindow::on_Connect_Button_clicked()
         stream << Pass << "\n";
 
     }
+     QProcess::startDetached("/bin/bash", {"/home/islam_pi/GUI/FOTA_ver1/connect.sh"});
     // if (WifiConnected())
-    if(SSID == "islam" && Pass == "12345"){
+    if(((SSID == "shock 1") && (Pass == "k01149149126")) || ((SSID == "Bassam") && (Pass == "ITI123@iti"))){
         QMessageBox::information(this,"Connect","Connected Successfully!");
         this->hide();
         fota *fotaPage = new fota();

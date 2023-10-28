@@ -24,11 +24,11 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>Server</string>
      </attribute>
      <widget class="QPushButton" name="Server_pushButton">
       <property name="geometry">
@@ -46,14 +46,14 @@
      <widget class="QPushButton" name="pushButton_2">
       <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>450</y>
-        <width>91</width>
+        <x>160</x>
+        <y>120</y>
+        <width>221</width>
         <height>30</height>
        </rect>
       </property>
       <property name="text">
-       <string>Disconnect</string>
+       <string>Get Features</string>
       </property>
      </widget>
      <widget class="QLabel" name="ShowSSID_label">
@@ -79,11 +79,73 @@
        </rect>
       </property>
      </widget>
+     <widget class="QLineEdit" name="Path_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>160</y>
+        <width>431</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>260</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ShowFolderContent">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>220</y>
+        <width>171</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ShowFolderContents</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>Features</string>
      </attribute>
+     <widget class="QPushButton" name="LED_Button">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>91</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LED</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="FingerPrint_Button">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>10</y>
+        <width>91</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FingerPrint</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
