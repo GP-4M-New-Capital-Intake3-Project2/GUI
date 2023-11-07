@@ -62,6 +62,7 @@
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/QProcess \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
@@ -106,6 +107,7 @@
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocess.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \

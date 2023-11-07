@@ -10,6 +10,7 @@ CMakeFiles/FOTA_ver1.dir/FOTA_ver1_autogen/mocs_compilation.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QProcess
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -59,6 +60,7 @@ CMakeFiles/FOTA_ver1.dir/FOTA_ver1_autogen/mocs_compilation.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocess.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h
@@ -129,10 +131,13 @@ CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QFileInfo
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QProcess
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QUrl
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariant
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h
@@ -165,6 +170,7 @@ CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qitemselectionmodel.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qline.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h
@@ -182,10 +188,12 @@ CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocess.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qregularexpression.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h
@@ -243,32 +251,52 @@ CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtguiglobal.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtouchdevice.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtransform.h
+ /usr/include/aarch64-linux-gnu/qt5/QtGui/qvalidator.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector2d.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QApplication
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QFileDialog
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QLabel
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QLineEdit
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QListWidget
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QMainWindow
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QMenuBar
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QMessageBox
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QPushButton
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QStatusBar
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QTabWidget
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QTextEdit
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractitemview.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractslider.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qaction.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qactiongroup.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qapplication.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdialog.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfiledialog.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qframe.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlabel.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlineedit.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlistview.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlistwidget.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmainwindow.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmenu.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmenubar.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmessagebox.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qpushbutton.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qrubberband.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qslider.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstatusbar.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyle.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyleoption.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabbar.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabwidget.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtextedit.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h
@@ -282,6 +310,7 @@ CMakeFiles/FOTA_ver1.dir/main.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QProcess
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -333,6 +362,7 @@ CMakeFiles/FOTA_ver1.dir/main.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocess.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h
@@ -409,8 +439,11 @@ CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QProcess
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QThread
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QUrl
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -431,8 +464,10 @@ CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreapplication.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatastream.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qdeadlinetimer.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdir.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qelapsedtimer.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qeventloop.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfile.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfiledevice.h
@@ -461,6 +496,7 @@ CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocess.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h
@@ -471,6 +507,7 @@ CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsize.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qstandardpaths.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringbuilder.h
@@ -482,6 +519,7 @@ CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qthread.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qurl.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qurlquery.h
@@ -489,9 +527,11 @@ CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h
+ /usr/include/aarch64-linux-gnu/qt5/QtGui/QDesktopServices
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qcolor.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qcursor.h
+ /usr/include/aarch64-linux-gnu/qt5/QtGui/qdesktopservices.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qevent.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qfont.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qfontinfo.h

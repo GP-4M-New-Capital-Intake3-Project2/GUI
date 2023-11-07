@@ -4,6 +4,8 @@
 #include <QUrl>
 #include <QProcess>
 #include <QDir>
+#include <QDebug>
+#include <QThread>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -34,19 +36,39 @@ void MainWindow::on_Connect_Button_clicked()
         stream << Pass << "\n";
 
     }
-     QProcess::startDetached("/bin/bash", {"/home/islam_pi/GUI/FOTA_ver1/connect.sh"});
-    // if (WifiConnected())
-    if(((SSID == "shock 1") && (Pass == "k01149149126")) || ((SSID == "Bassam") && (Pass == "ITI123@iti"))){
-        QMessageBox::information(this,"Connect","Connected Successfully!");
-        this->hide();
-        fota *fotaPage = new fota();
-        fotaPage->show();
-
+    QProcess::execute("/bin/bash", {"/home/islam_pi/GUI/ExecutionFiles/connect.sh"});
+    /*
+        Excute is stuck the process till finishing it.
+    */
+    //QProcess::startDetached("/bin/bash", {"/home/islam_pi/GUI/FOTA_ver1/connect.sh"});
+    QFile file("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/connectionCheck.txt");
+    if(!file.open((QIODevice::ReadOnly| QIODevice::Text ))){
+        QMessageBox::warning(0,"Warning",file.errorString());
     }
     else{
-        QMessageBox::warning(this,"Connect","Invalid SSID or Password!");
-        ui->SSID_lineEdit->setText("");
-         ui->Password_lineEdit->setText("");
+        //file.seek(0);
+        QTextStream in(&file);
+        QString WifiConnected;
+        while(!in.atEnd()) {
+            WifiConnected.append( in.readLine());
+            qDebug() << WifiConnected<<Qt::endl;
+        }
+        //qDebug()<<WifiConnected;
+        if (WifiConnected[0] == '1'){
+
+            //if(((SSID == "shock 1") && (Pass == "k01149149126")) || ((SSID == "ITI") && (Pass == "ITI123@iti"))){
+            QMessageBox::information(this,"Connect","Connected Successfully!");
+            this->hide();
+            fota *fotaPage = new fota();
+            fotaPage->show();
+
+        }
+        else if(WifiConnected[0] == '0'){
+            QMessageBox::warning(this,"Connect","Invalid SSID or Password!");
+            ui->SSID_lineEdit->setText("");
+            ui->Password_lineEdit->setText("");
+        }
+        file.close();
     }
 
 }

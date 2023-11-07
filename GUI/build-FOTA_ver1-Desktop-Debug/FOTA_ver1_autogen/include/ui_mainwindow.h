@@ -99,7 +99,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        groupBox->setTitle(QCoreApplication::translate("MainWindow", "GroupBox", nullptr));
+        groupBox->setTitle(QString());
         SSID_label->setText(QCoreApplication::translate("MainWindow", "SSID", nullptr));
         Password_label->setText(QCoreApplication::translate("MainWindow", "Password", nullptr));
         Connect_Button->setText(QCoreApplication::translate("MainWindow", "Connect", nullptr));

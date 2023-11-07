@@ -61,6 +61,7 @@
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/QProcess \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
@@ -105,6 +106,7 @@
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocess.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
@@ -153,7 +155,10 @@
   /usr/include/aarch64-linux-gnu/qt5/QtGui/qtransform.h \
   /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindowdefs.h \
   /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QMainWindow \
+  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QMessageBox \
+  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdialog.h \
   /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmessagebox.h \
   /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
   /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \

@@ -8,6 +8,8 @@
 #include <QDebug>
 #include <QTextStream>
 #include <QMessageBox>
+#include <QProcess>
+
 
 namespace Ui {
 class fota;
@@ -29,6 +31,14 @@ private slots:
     void on_LED_Button_clicked();
 
     void on_ShowFolderContent_clicked();
+
+    void on_GetFeatures_button_clicked();
+
+    void on_NULL_2_clicked();
+
+    void on_FingerPrint_Button_clicked();
+
+    void on_Access_Finger_button_clicked();
 
 private:
     Ui::fota *ui;
