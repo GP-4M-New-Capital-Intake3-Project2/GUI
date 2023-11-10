@@ -6,19 +6,26 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>587</width>
-    <height>556</height>
+    <width>573</width>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+rgb(0, 255, 255)
+background:blue;
+
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>10</y>
+      <y>90</y>
       <width>481</width>
       <height>221</height>
      </rect>
@@ -120,6 +127,13 @@
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:rgb(0, 80, 0)
+
+
+}</string>
+     </property>
      <property name="text">
       <string>Connect</string>
      </property>
@@ -140,10 +154,37 @@
        <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:rgb(255, 0, 0)
+
+
+}</string>
+     </property>
      <property name="text">
       <string>Close</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QLabel" name="FOTAApp_label">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>FOTA Application</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -151,7 +192,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>587</width>
+     <width>573</width>
      <height>27</height>
     </rect>
    </property>

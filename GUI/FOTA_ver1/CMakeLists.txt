@@ -39,6 +39,10 @@ set(PROJECT_SOURCES
         fota.cpp
         fota.h
         fota.ui
+        verifyregister.cpp
+        verifyregister.h
+        verifyregister.ui
+
 
 )
 

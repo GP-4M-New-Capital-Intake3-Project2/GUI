@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/islam_pi/GUI/FOTA_ver1/fota.cpp" "/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CMakeFiles/FOTA_ver1.dir/fota.cpp.o"
   "/home/islam_pi/GUI/FOTA_ver1/main.cpp" "/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CMakeFiles/FOTA_ver1.dir/main.cpp.o"
   "/home/islam_pi/GUI/FOTA_ver1/mainwindow.cpp" "/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.o"
+  "/home/islam_pi/GUI/FOTA_ver1/verifyregister.cpp" "/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CMakeFiles/FOTA_ver1.dir/verifyregister.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

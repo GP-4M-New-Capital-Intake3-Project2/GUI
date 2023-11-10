@@ -11,6 +11,8 @@ fota.h
 /home/islam_pi/GUI/FOTA_ver1/fota.h
 ui_fota.h
 /home/islam_pi/GUI/FOTA_ver1/ui_fota.h
+verifyregister.h
+/home/islam_pi/GUI/FOTA_ver1/verifyregister.h
 QDesktopServices
 -
 QUrl
@@ -20,6 +22,8 @@ QFileInfo
 QFileDialog
 -
 string
+-
+QPixmap
 -
 
 /home/islam_pi/GUI/FOTA_ver1/fota.h
@@ -38,6 +42,24 @@ QTextStream
 QMessageBox
 -
 QProcess
+-
+
+/home/islam_pi/GUI/FOTA_ver1/verifyregister.h
+QWidget
+-
+QDesktopServices
+-
+QUrl
+-
+QProcess
+-
+QDir
+-
+QDebug
+-
+QThread
+-
+QMessageBox
 -
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug
@@ -67,6 +89,10 @@ qstring.h
 /usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream
 qtextstream.h
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QThread
+qthread.h
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qthread.h
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/QUrl
 qurl.h
@@ -214,6 +240,20 @@ QtCore/qiodevice.h
 QtCore/qpair.h
 -
 
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qdeadlinetimer.h
+QtCore/qelapsedtimer.h
+-
+QtCore/qmetatype.h
+-
+QtCore/qnamespace.h
+-
+QtCore/qpair.h
+-
+limits
+-
+chrono
+-
+
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h
 QtCore/qalgorithms.h
 -
@@ -254,6 +294,10 @@ QtCore/qfileinfo.h
 QtCore/qstringlist.h
 -
 QtCore/qshareddata.h
+-
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qelapsedtimer.h
+QtCore/qglobal.h
 -
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qeventloop.h
@@ -772,6 +816,16 @@ QtCore/qscopedpointer.h
 stdio.h
 -
 
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qthread.h
+QtCore/qobject.h
+-
+QtCore/qdeadlinetimer.h
+-
+future
+-
+functional
+-
+
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h
 QtCore/qglobal.h
 -
@@ -887,6 +941,10 @@ QtCore/qglobal.h
 /usr/include/aarch64-linux-gnu/qt5/QtGui/QDesktopServices
 qdesktopservices.h
 /usr/include/aarch64-linux-gnu/qt5/QtGui/qdesktopservices.h
+
+/usr/include/aarch64-linux-gnu/qt5/QtGui/QPixmap
+qpixmap.h
+/usr/include/aarch64-linux-gnu/qt5/QtGui/qpixmap.h
 
 /usr/include/aarch64-linux-gnu/qt5/QtGui/qbrush.h
 QtGui/qtguiglobal.h

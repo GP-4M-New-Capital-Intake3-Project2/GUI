@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FOTA_ver1.dir/fota.cpp.o"
   "CMakeFiles/FOTA_ver1.dir/main.cpp.o"
   "CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.o"
+  "CMakeFiles/FOTA_ver1.dir/verifyregister.cpp.o"
   "FOTA_ver1"
   "FOTA_ver1.pdb"
 )

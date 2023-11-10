@@ -263,6 +263,33 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FOTA_ver1.dir/build.make CMakeFiles/FOTA_ver1.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+verifyregister.o: verifyregister.cpp.o
+
+.PHONY : verifyregister.o
+
+# target to build an object file
+verifyregister.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FOTA_ver1.dir/build.make CMakeFiles/FOTA_ver1.dir/verifyregister.cpp.o
+.PHONY : verifyregister.cpp.o
+
+verifyregister.i: verifyregister.cpp.i
+
+.PHONY : verifyregister.i
+
+# target to preprocess a source file
+verifyregister.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FOTA_ver1.dir/build.make CMakeFiles/FOTA_ver1.dir/verifyregister.cpp.i
+.PHONY : verifyregister.cpp.i
+
+verifyregister.s: verifyregister.cpp.s
+
+.PHONY : verifyregister.s
+
+# target to generate assembly for a file
+verifyregister.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FOTA_ver1.dir/build.make CMakeFiles/FOTA_ver1.dir/verifyregister.cpp.s
+.PHONY : verifyregister.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -285,6 +312,9 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... verifyregister.o"
+	@echo "... verifyregister.i"
+	@echo "... verifyregister.s"
 .PHONY : help
 
 

@@ -87,6 +87,11 @@
 			"/home/islam_pi/GUI/FOTA_ver1/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp"
+		],
+		[
+			"/home/islam_pi/GUI/FOTA_ver1/verifyregister.h",
+			"MU",
+			"EWIEGA46WW/moc_verifyregister.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -143,7 +148,8 @@
 	[
 		[ "/home/islam_pi/GUI/FOTA_ver1/fota.cpp", "MU" ],
 		[ "/home/islam_pi/GUI/FOTA_ver1/main.cpp", "MU" ],
-		[ "/home/islam_pi/GUI/FOTA_ver1/mainwindow.cpp", "MU" ]
+		[ "/home/islam_pi/GUI/FOTA_ver1/mainwindow.cpp", "MU" ],
+		[ "/home/islam_pi/GUI/FOTA_ver1/verifyregister.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
