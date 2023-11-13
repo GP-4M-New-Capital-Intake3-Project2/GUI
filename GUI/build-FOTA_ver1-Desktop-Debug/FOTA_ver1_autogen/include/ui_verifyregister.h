@@ -49,6 +49,7 @@ public:
         font1.setBold(true);
         font1.setWeight(75);
         lineEdit->setFont(font1);
+        lineEdit->setEchoMode(QLineEdit::Password);
 
         retranslateUi(VerifyRegister);
 

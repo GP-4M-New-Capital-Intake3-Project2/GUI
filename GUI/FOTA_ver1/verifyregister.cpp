@@ -17,7 +17,7 @@ void VerifyRegister::on_pushButton_clicked()
 {
     QString Password_Verify = ui->lineEdit->text();
     if(Password_Verify == "12345"){
-        /*QString pythonInterpreter = "python"; // or specify the full path to the Python interpreter
+        QString pythonInterpreter = "python"; // or specify the full path to the Python interpreter
         QString pythonScript = "/home/islam_pi/GUI/ExecutionFiles/SendFP_RChar.py";  // replace with the actual path of your Python script
         QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
         QFile file("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CheckFPStatus.txt");
@@ -37,8 +37,8 @@ void VerifyRegister::on_pushButton_clicked()
             else if(Valid[0] == '0'){
                 QMessageBox::warning(this,"Register","Registeration failed!\nPlease try again." );
             }
-        }*/
-        QMessageBox::information(this,"Register","Finger is Registered Successfully!" );
+        }
+        //QMessageBox::information(this,"Register","Finger is Registered Successfully!" );
 
         this->hide();
     }

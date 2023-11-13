@@ -23,6 +23,7 @@ fota::fota(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::fota)
 {
+    this->resize(1920,1080);
     ui->setupUi(this);
     QFile File("WifiInformation.txt");
     if(File.open(QIODevice::ReadOnly)){
@@ -30,16 +31,38 @@ fota::fota(QWidget *parent) :
         ui->ShowSSID_textEdit->setText(stream.readLine());
         ui->ShowSSID_textEdit->setEnabled(false);
     }
+    QPixmap pixITI("/home/islam_pi/GUI/ITI.png");
+    ui->label->setPixmap(pixITI.scaled(150,50,Qt::KeepAspectRatio));
 
-    QPixmap pix("/home/islam_pi/GUI/CAR1.jpeg");
-    //int w = ui->label_4->width();
-    //int h = ui->label_4->height();
-    ui->label_4->setPixmap(pix.scaled(500,200,Qt::KeepAspectRatio));
+    QPixmap pix("/home/islam_pi/GUI/CAR1.jpg");
+    ui->label_4->setPixmap(pix.scaled(550,200,Qt::KeepAspectRatio));
 
-    ui->LED_Button->setEnabled(false);
+    QPixmap pix1("/home/islam_pi/GUI/CAR1.jpg");
+    ui->label_5->setPixmap(pix.scaled(550,200,Qt::KeepAspectRatio));
+
     ui->FingerPrint_Button->setEnabled(false);
-    ui->Led_Off_button->setEnabled(false);
     ui->Access_Finger_button->setEnabled(false);
+
+    QFile file("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/Enabled.txt");
+    if(!file.open((QIODevice::ReadOnly| QIODevice::Text ))){
+        QMessageBox::warning(0,"Warning",file.errorString());
+    }
+    else{
+        QTextStream in(&file);
+        QString Valid;
+        while(!in.atEnd()) {
+            Valid.append( in.readLine());
+        }
+
+        if (Valid[0] == '1'){
+            ui->Path_lineEdit->setText("Features had uploaded on STM");
+            ui->FingerPrint_Button->setEnabled(true);
+            ui->Access_Finger_button->setEnabled(true);
+            QMessageBox::warning(this,"File","FP Enabled" );
+        }
+        else if(Valid[0] == '0'){
+        }
+    }
 }
 
 ///
@@ -136,59 +159,81 @@ void fota::on_GetFeatures_button_clicked()
 
     QString pythonInterpreter = "python"; // or specify the full path to the Python interpreter
     QString pythonScript = "/home/islam_pi/GUI/ExecutionFiles/Reset.py";
-    //QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
+    QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
 
     int Verified = 1;
     if(Verified==1){
         QString pythonInterpreter = "python"; // or specify the full path to the Python interpreter
         QString pythonScript = "/home/islam_pi/GUI/ExecutionFiles/send.py";
-        //QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
+        QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
 
-        ui->Path_lineEdit->setText("Features had uploaded on STM");
-        ui->listWidget->clear();
-
-        //QString dirPath= ui->Path_lineEdit->text();
-        QString dirPath= "/home/islam_pi/Downloads";
-
-        if (dirPath.isEmpty())
-            return;
-
-        QDir dir(dirPath);
-
-        //Get the list of files and directories in the folder
-        QList <QFileInfo> fileList= dir.entryInfoList();
-
-        for (int i=2; i< fileList.size(); i++){
-            QString prefix;
-            if (fileList.at(i).isFile()){
-                prefix= "File: ";
+        //Another Reset Because of the Systick problem!
+        pythonInterpreter = "python"; // or specify the full path to the Python interpreter
+        pythonScript = "/home/islam_pi/GUI/ExecutionFiles/Reset.py";
+        QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
+        QFile file("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/Enabled.txt");
+        if(!file.open((QIODevice::ReadOnly| QIODevice::Text ))){
+            QMessageBox::warning(0,"Warning",file.errorString());
+        }
+        else{
+            QTextStream in(&file);
+            QString Valid;
+            while(!in.atEnd()) {
+                Valid.append( in.readLine());
             }
-            if (fileList.at(i).isDir()){
-                prefix="Directory: ";
-            }
-            QString str = fileList.at(i).absoluteFilePath();
-            str= str.split('/').last();
-            QString filename = str.split('.').first();
 
-            ui->listWidget->addItem(prefix + str   );
-
-            if (  filename == "LED"){
-                ui->LED_Button->setEnabled(true);
-                ui->Led_Off_button->setEnabled(true);
-                QMessageBox::warning(this,"File","Led Enabled" );
-            }
-            if(filename== "FingerPrint"){
+            if (Valid[0] == '1'){
+                ui->Path_lineEdit->setText("Features had uploaded on STM");
                 ui->FingerPrint_Button->setEnabled(true);
                 ui->Access_Finger_button->setEnabled(true);
-
                 QMessageBox::warning(this,"File","FP Enabled" );
-
+            }
+            else if(Valid[0] == '0'){
             }
         }
-    }
-    else
-        ui->Path_lineEdit->setText("Uploading Failed!");
 
+
+       /* QString dirPath= "/home/islam_pi/Downloads";
+
+        if (dirPath.isEmpty())
+        {
+
+
+        }
+        else{ // if the Dir is  not empty
+            QDir dir(dirPath);
+
+            //Get the list of files and directories in the folder
+            QList <QFileInfo> fileList= dir.entryInfoList();
+
+            for (int i=2; i< fileList.size(); i++){
+                QString prefix;
+                if (fileList.at(i).isFile()){
+                    prefix= "File: ";
+                }
+                if (fileList.at(i).isDir()){
+                    prefix="Directory: ";
+                }
+                QString str = fileList.at(i).absoluteFilePath();
+                str= str.split('/').last();
+                QString filename = str.split('.').first();
+
+                ui->listWidget->addItem(prefix + str   );
+
+                if (  filename == "LED"){
+                    ui->LED_Button->setEnabled(true);
+                    ui->Led_Off_button->setEnabled(true);
+                    QMessageBox::warning(this,"File","Led Enabled" );
+                }
+                if(filename== "FingerPrint"){
+                    ui->FingerPrint_Button->setEnabled(true);
+                    ui->Access_Finger_button->setEnabled(true);
+                    QMessageBox::warning(this,"File","FP Enabled" );
+                }
+            }
+        }*/
+    }else
+        ui->Path_lineEdit->setText("Uploading Failed!");
 }
 
 

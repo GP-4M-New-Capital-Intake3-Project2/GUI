@@ -2,7 +2,7 @@ import serial
 import time
 
 #UART config
-ser = serial.Serial("/dev/ttyS0",baudrate=9600, timeout=100)
+ser = serial.Serial("/dev/ttyS0",baudrate=9600)
 
 ser.write(b'A')
 

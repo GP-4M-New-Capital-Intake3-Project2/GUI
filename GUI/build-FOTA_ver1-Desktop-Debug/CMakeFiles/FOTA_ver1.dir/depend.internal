@@ -150,7 +150,6 @@ CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QThread
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QUrl
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariant
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h
@@ -185,7 +184,6 @@ CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qitemselectionmodel.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qline.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h
@@ -208,7 +206,6 @@ CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qregularexpression.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h
@@ -268,15 +265,14 @@ CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtguiglobal.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtouchdevice.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtransform.h
- /usr/include/aarch64-linux-gnu/qt5/QtGui/qvalidator.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector2d.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QFileDialog
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QGridLayout
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QLabel
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QLineEdit
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QListWidget
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QMainWindow
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QMenuBar
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QMessageBox
@@ -286,34 +282,27 @@ CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QTextEdit
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractitemview.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractslider.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qaction.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qactiongroup.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qapplication.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qboxlayout.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdialog.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfiledialog.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qframe.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgridlayout.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlabel.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlayout.h
+ /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlayoutitem.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlineedit.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlistview.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlistwidget.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmainwindow.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmenu.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmenubar.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qmessagebox.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qpushbutton.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qrubberband.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qslider.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstatusbar.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyle.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstyleoption.h
- /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabbar.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabwidget.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtextedit.h
  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h

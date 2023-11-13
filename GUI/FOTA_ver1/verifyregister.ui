@@ -68,6 +68,9 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
   </widget>
  </widget>
  <resources/>
