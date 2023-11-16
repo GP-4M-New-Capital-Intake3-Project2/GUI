@@ -104,8 +104,8 @@ void fota::on_Server_pushButton_clicked()
 void fota::on_GetFeatures_button_clicked()
 {
     //Validation for signature
-    /*QProcess::execute("/bin/bash", {"/home/islam_pi/GUI/ExecutionFiles/valid.sh"});
-    QFile file("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/valided.txt");
+    QProcess::execute("/bin/bash", {"/home/islam_pi/GUI/ExecutionFiles/hash.sh"});
+    QFile file("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/result.txt");
     if(!file.open((QIODevice::ReadOnly| QIODevice::Text ))){
         QMessageBox::warning(0,"Warning",file.errorString());
     }
@@ -116,125 +116,45 @@ void fota::on_GetFeatures_button_clicked()
             Valid.append( in.readLine());
         }
         if (Valid[0] == '1'){
-            // Sending the hex files to STM By Qproces
             QString pythonInterpreter = "python"; // or specify the full path to the Python interpreter
-            QString pythonScript = "/home/islam_pi/GUI/ExecutionFiles/send.py";
+            QString pythonScript = "/home/islam_pi/GUI/ExecutionFiles/Reset.py";
             QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
-            ui->Path_lineEdit->setText("Features had uploaded on STM");
-            ui->listWidget->clear();
-            QString dirPath= "/home/islam_pi/Downloads";
-            if (dirPath.isEmpty())
-                return;
-            QDir dir(dirPath);
-            QList <QFileInfo> fileList= dir.entryInfoList();
-            for (int i=2; i< fileList.size(); i++){
-                QString prefix;
-                if (fileList.at(i).isFile()){
-                    prefix= "File: ";
+            pythonInterpreter = "python"; // or specify the full path to the Python interpreter
+            pythonScript = "/home/islam_pi/GUI/ExecutionFiles/send.py";
+            QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
+
+            //Another Reset Because of the Systick problem!
+            pythonInterpreter = "python"; // or specify the full path to the Python interpreter
+            pythonScript = "/home/islam_pi/GUI/ExecutionFiles/Reset.py";
+            QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
+            QFile file("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/Enabled.txt");
+            if(!file.open((QIODevice::ReadOnly| QIODevice::Text ))){
+                QMessageBox::warning(0,"Warning",file.errorString());
+            }
+            else{
+                QTextStream in(&file);
+                QString Valid;
+                while(!in.atEnd()) {
+                    Valid.append( in.readLine());
                 }
-                if (fileList.at(i).isDir()){
-                    prefix="Directory: ";
-                }
-                QString str = fileList.at(i).absoluteFilePath();
-                str= str.split('/').last();
-                QString filename = str.split('.').first();
-                ui->listWidget->addItem(prefix + str   );
-                if (  filename == "LED"){
-                    ui->LED_Button->setEnabled(true);
-                    ui->Led_Off_button->setEnabled(true);
-                    QMessageBox::warning(this,"File","Led Enabled" );
-                }
-                if(filename== "FingerPrint"){
+
+                if (Valid[0] == '1'){
+                    ui->Path_lineEdit->setText("Features had uploaded on STM");
                     ui->FingerPrint_Button->setEnabled(true);
                     ui->Access_Finger_button->setEnabled(true);
                     QMessageBox::warning(this,"File","FP Enabled" );
                 }
+                else if(Valid[0] == '0'){
+                }
             }
-        }
-        else if(Valid[0] == '0'){
-            // Hacking or Network
-            ui->Path_lineEdit->setText("Downloading Failed!");
-        }
-    }*/
-
-    QString pythonInterpreter = "python"; // or specify the full path to the Python interpreter
-    QString pythonScript = "/home/islam_pi/GUI/ExecutionFiles/Reset.py";
-    QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
-
-    int Verified = 1;
-    if(Verified==1){
-        QString pythonInterpreter = "python"; // or specify the full path to the Python interpreter
-        QString pythonScript = "/home/islam_pi/GUI/ExecutionFiles/send.py";
-        QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
-
-        //Another Reset Because of the Systick problem!
-        pythonInterpreter = "python"; // or specify the full path to the Python interpreter
-        pythonScript = "/home/islam_pi/GUI/ExecutionFiles/Reset.py";
-        QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
-        QFile file("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/Enabled.txt");
-        if(!file.open((QIODevice::ReadOnly| QIODevice::Text ))){
-            QMessageBox::warning(0,"Warning",file.errorString());
         }
         else{
-            QTextStream in(&file);
-            QString Valid;
-            while(!in.atEnd()) {
-                Valid.append( in.readLine());
-            }
-
-            if (Valid[0] == '1'){
-                ui->Path_lineEdit->setText("Features had uploaded on STM");
-                ui->FingerPrint_Button->setEnabled(true);
-                ui->Access_Finger_button->setEnabled(true);
-                QMessageBox::warning(this,"File","FP Enabled" );
-            }
-            else if(Valid[0] == '0'){
-            }
+            ui->Path_lineEdit->setText("Uploading Failed, File has been manipulated!");
+            QMessageBox::warning(this,"File","File has been manipulated!" );
         }
-
-
-       /* QString dirPath= "/home/islam_pi/Downloads";
-
-        if (dirPath.isEmpty())
-        {
-
-
-        }
-        else{ // if the Dir is  not empty
-            QDir dir(dirPath);
-
-            //Get the list of files and directories in the folder
-            QList <QFileInfo> fileList= dir.entryInfoList();
-
-            for (int i=2; i< fileList.size(); i++){
-                QString prefix;
-                if (fileList.at(i).isFile()){
-                    prefix= "File: ";
-                }
-                if (fileList.at(i).isDir()){
-                    prefix="Directory: ";
-                }
-                QString str = fileList.at(i).absoluteFilePath();
-                str= str.split('/').last();
-                QString filename = str.split('.').first();
-
-                ui->listWidget->addItem(prefix + str   );
-
-                if (  filename == "LED"){
-                    ui->LED_Button->setEnabled(true);
-                    ui->Led_Off_button->setEnabled(true);
-                    QMessageBox::warning(this,"File","Led Enabled" );
-                }
-                if(filename== "FingerPrint"){
-                    ui->FingerPrint_Button->setEnabled(true);
-                    ui->Access_Finger_button->setEnabled(true);
-                    QMessageBox::warning(this,"File","FP Enabled" );
-                }
-            }
-        }*/
-    }else
-        ui->Path_lineEdit->setText("Uploading Failed!");
+    }
 }
+
 
 
 ///
@@ -249,27 +169,7 @@ void fota::on_FingerPrint_Button_clicked()
 {
     VerifyRegister *verifyregisterPage = new VerifyRegister();
     verifyregisterPage->show();
-    /*QString pythonInterpreter = "python"; // or specify the full path to the Python interpreter
-    QString pythonScript = "/home/islam_pi/GUI/ExecutionFiles/SendFP_RChar.py";  // replace with the actual path of your Python script
-    QProcess::execute(pythonInterpreter, QStringList() << pythonScript);
-    QFile file("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/CheckFPStatus.txt");
-    if(!file.open((QIODevice::ReadOnly| QIODevice::Text ))){
-        QMessageBox::warning(0,"Warning",file.errorString());
-    }
-    else{
-        QTextStream in(&file);
-        QString Valid;
-        while(!in.atEnd()) {
-            Valid.append( in.readLine());
-        }
 
-        if (Valid[0] == '1'){
-            QMessageBox::information(this,"Register","Finger is Registered Successfully!" );
-        }
-        else if(Valid[0] == '0'){
-            QMessageBox::warning(this,"Register","Registeration failed!\nPlease try again." );
-        }
-    }*/
 }
 
 ///

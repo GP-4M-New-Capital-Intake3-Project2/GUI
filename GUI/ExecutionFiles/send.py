@@ -23,6 +23,7 @@ def CalculateCrc(data):
 # change here for the file name
 ##############################################################
 file_name = glob.glob('/home/islam_pi/Downloads/*.hex')[0]
+hashfile_name = glob.glob('/home/islam_pi/Downloads/*.txt')[0]
 
 hexf = open(file_name, "r")
 print(file_name)##############################################################
@@ -77,3 +78,4 @@ for char in end:
 f = open("/home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/Enabled.txt","w")
 f.write("1")
 os.remove(file_name)
+os.remove(hashfile_name)
