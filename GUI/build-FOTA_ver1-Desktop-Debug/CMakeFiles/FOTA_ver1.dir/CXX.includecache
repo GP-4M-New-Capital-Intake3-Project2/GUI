@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/islam_pi/GUI/FOTA_ver1/fota.cpp
-fota.h
-/home/islam_pi/GUI/FOTA_ver1/fota.h
-ui_fota.h
-/home/islam_pi/GUI/FOTA_ver1/ui_fota.h
-verifyregister.h
-/home/islam_pi/GUI/FOTA_ver1/verifyregister.h
-QDesktopServices
--
-QUrl
--
-QFileInfo
--
-QFileDialog
--
-string
--
-QPixmap
--
-
 /home/islam_pi/GUI/FOTA_ver1/fota.h
 QMainWindow
 -
@@ -43,10 +23,16 @@ QMessageBox
 -
 QProcess
 -
+mainwindow.h
+/home/islam_pi/GUI/FOTA_ver1/mainwindow.h
 
-/home/islam_pi/GUI/FOTA_ver1/verifyregister.h
-QWidget
--
+/home/islam_pi/GUI/FOTA_ver1/mainwindow.cpp
+mainwindow.h
+/home/islam_pi/GUI/FOTA_ver1/mainwindow.h
+mainwindow.h
+/home/islam_pi/GUI/FOTA_ver1/mainwindow.h
+./ui_mainwindow.h
+/home/islam_pi/GUI/FOTA_ver1/ui_mainwindow.h
 QDesktopServices
 -
 QUrl
@@ -59,8 +45,24 @@ QDebug
 -
 QThread
 -
+
+/home/islam_pi/GUI/FOTA_ver1/mainwindow.h
+QMainWindow
+-
 QMessageBox
 -
+QFile
+-
+QDir
+-
+QString
+-
+QDebug
+-
+QTextStream
+-
+fota.h
+/home/islam_pi/GUI/FOTA_ver1/fota.h
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug
 qdebug.h
@@ -73,10 +75,6 @@ qdir.h
 /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile
 qfile.h
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qfile.h
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QFileInfo
-qfileinfo.h
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qfileinfo.h
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/QProcess
 qprocess.h
@@ -908,10 +906,6 @@ QtCore/qglobal.h
 qdesktopservices.h
 /usr/include/aarch64-linux-gnu/qt5/QtGui/qdesktopservices.h
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QPixmap
-qpixmap.h
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qpixmap.h
-
 /usr/include/aarch64-linux-gnu/qt5/QtGui/qbrush.h
 QtGui/qtguiglobal.h
 -
@@ -1192,22 +1186,6 @@ QtCore/qshareddata.h
 QtGui/qtextformat.h
 -
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qtextdocument.h
-QtGui/qtguiglobal.h
--
-QtCore/qobject.h
--
-QtCore/qsize.h
--
-QtCore/qrect.h
--
-QtCore/qvariant.h
--
-QtGui/qfont.h
--
-QtCore/qurl.h
--
-
 /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextformat.h
 QtGui/qtguiglobal.h
 -
@@ -1296,13 +1274,9 @@ QtGui/qtguiglobal.h
 qapplication.h
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qapplication.h
 
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/QFileDialog
-qfiledialog.h
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfiledialog.h
-
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/QGridLayout
-qgridlayout.h
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgridlayout.h
+/usr/include/aarch64-linux-gnu/qt5/QtWidgets/QGroupBox
+qgroupbox.h
+/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgroupbox.h
 
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QLabel
 qlabel.h
@@ -1332,14 +1306,6 @@ qpushbutton.h
 qstatusbar.h
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qstatusbar.h
 
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/QTabWidget
-qtabwidget.h
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtabwidget.h
-
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/QTextEdit
-qtextedit.h
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtextedit.h
-
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QWidget
 qwidget.h
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qwidget.h
@@ -1352,12 +1318,6 @@ QtGui/qicon.h
 QtGui/qkeysequence.h
 -
 QtWidgets/qwidget.h
--
-
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qframe.h
 -
 
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qaction.h
@@ -1400,16 +1360,6 @@ QtWidgets/qdesktopwidget.h
 QtGui/qguiapplication.h
 -
 
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qboxlayout.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qlayout.h
--
-QtWidgets/qwidget.h
--
-limits.h
--
-
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1422,70 +1372,22 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qwidget.h
 -
 
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qfiledialog.h
-QtWidgets/qtwidgetsglobal.h
--
-QtCore/qdir.h
--
-QtCore/qstring.h
--
-QtCore/qurl.h
--
-QtWidgets/qdialog.h
--
-functional
--
-
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qframe.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qwidget.h
 -
 
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgridlayout.h
+/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qgroupbox.h
 QtWidgets/qtwidgetsglobal.h
 -
-QtWidgets/qlayout.h
--
-QtWidgets/qwidget.h
--
-limits.h
+QtWidgets/qframe.h
 -
 
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlabel.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qframe.h
--
-
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlayout.h
-QtWidgets/qtwidgetsglobal.h
--
-QtCore/qobject.h
--
-QtWidgets/qlayoutitem.h
--
-QtWidgets/qsizepolicy.h
--
-QtCore/qrect.h
--
-QtCore/qmargins.h
--
-limits.h
--
-QtWidgets/qboxlayout.h
--
-QtWidgets/qgridlayout.h
--
-
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlayoutitem.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qsizepolicy.h
--
-QtCore/qrect.h
--
-limits.h
 -
 
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qlineedit.h
@@ -1560,20 +1462,6 @@ QtWidgets/qwidget.h
 QtGui/qicon.h
 -
 
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtextedit.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qabstractscrollarea.h
--
-QtGui/qtextdocument.h
--
-QtGui/qtextoption.h
--
-QtGui/qtextcursor.h
--
-QtGui/qtextformat.h
--
-
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h
 
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h
@@ -1614,12 +1502,12 @@ QtGui/qkeysequence.h
 QtGui/qevent.h
 -
 
-FOTA_ver1_autogen/include/ui_fota.h
+FOTA_ver1_autogen/include/ui_mainwindow.h
 QtCore/QVariant
 -
 QtWidgets/QApplication
 -
-QtWidgets/QGridLayout
+QtWidgets/QGroupBox
 -
 QtWidgets/QLabel
 -
@@ -1632,10 +1520,6 @@ QtWidgets/QMenuBar
 QtWidgets/QPushButton
 -
 QtWidgets/QStatusBar
--
-QtWidgets/QTabWidget
--
-QtWidgets/QTextEdit
 -
 QtWidgets/QWidget
 -

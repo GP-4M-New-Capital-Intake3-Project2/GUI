@@ -39,6 +39,7 @@ public:
     QLineEdit *Path_lineEdit;
     QPushButton *GetFeatures_button;
     QLabel *label_5;
+    QPushButton *ConnectWin_Button;
     QWidget *tab_2;
     QPushButton *Access_Finger_button;
     QLabel *label_2;
@@ -115,7 +116,7 @@ public:
         tab->setObjectName(QString::fromUtf8("tab"));
         Server_pushButton = new QPushButton(tab);
         Server_pushButton->setObjectName(QString::fromUtf8("Server_pushButton"));
-        Server_pushButton->setGeometry(QRect(370, 20, 171, 41));
+        Server_pushButton->setGeometry(QRect(360, 60, 171, 41));
         Server_pushButton->setFont(font1);
         Server_pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "\n"
@@ -147,6 +148,10 @@ public:
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(10, 160, 551, 191));
         label_5->setBaseSize(QSize(500, 200));
+        ConnectWin_Button = new QPushButton(tab);
+        ConnectWin_Button->setObjectName(QString::fromUtf8("ConnectWin_Button"));
+        ConnectWin_Button->setGeometry(QRect(360, 19, 171, 31));
+        ConnectWin_Button->setFont(font1);
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
@@ -205,8 +210,14 @@ public:
         label_3->setText(QCoreApplication::translate("fota", "FOTA Application", nullptr));
         Server_pushButton->setText(QCoreApplication::translate("fota", "EASY Solutions Store", nullptr));
         ShowSSID_label->setText(QCoreApplication::translate("fota", "Your SSID", nullptr));
+        ShowSSID_textEdit->setHtml(QCoreApplication::translate("fota", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'PibotoLt'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Disconnected</p></body></html>", nullptr));
         GetFeatures_button->setText(QCoreApplication::translate("fota", "Update/Get Features", nullptr));
         label_5->setText(QString());
+        ConnectWin_Button->setText(QCoreApplication::translate("fota", "Connect to WiFi", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("fota", "Server", nullptr));
         Access_Finger_button->setText(QCoreApplication::translate("fota", "Acess with Finger Print", nullptr));
         label_2->setText(QCoreApplication::translate("fota", "FingerPrint Options", nullptr));

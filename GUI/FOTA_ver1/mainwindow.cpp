@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow){
     ui->setupUi(this);
-    this->resize(1920,1080);
+    this->resize(800,600);
 
 }
 
@@ -105,8 +105,11 @@ void MainWindow::on_Connect_Button_clicked()
 void MainWindow::on_Close_Button_clicked()
 {
     QMessageBox::StandardButton reply;
-    reply = QMessageBox::question(this,"Cancel","Are you sure to close App?",QMessageBox :: Yes | QMessageBox :: No);
+    reply = QMessageBox::question(this,"Cancel","Are you sure to skip connection?",QMessageBox :: Yes | QMessageBox :: No);
     if(reply == QMessageBox :: Yes){
-        QApplication::quit();
+        //QApplication::quit();
+        this->hide();
+        fota *fotaPage = new fota();
+        fotaPage->show();
     }
 }

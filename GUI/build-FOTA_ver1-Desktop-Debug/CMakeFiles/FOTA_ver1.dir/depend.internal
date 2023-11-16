@@ -139,6 +139,7 @@ CMakeFiles/FOTA_ver1.dir/FOTA_ver1_autogen/mocs_compilation.cpp.o
 CMakeFiles/FOTA_ver1.dir/fota.cpp.o
  /home/islam_pi/GUI/FOTA_ver1/fota.cpp
  /home/islam_pi/GUI/FOTA_ver1/fota.h
+ /home/islam_pi/GUI/FOTA_ver1/mainwindow.h
  /home/islam_pi/GUI/FOTA_ver1/verifyregister.h
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir

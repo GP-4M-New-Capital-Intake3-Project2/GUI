@@ -9,6 +9,7 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include <QProcess>
+#include "mainwindow.h"
 
 
 namespace Ui {
@@ -39,6 +40,10 @@ private slots:
     void on_FingerPrint_Button_clicked();
 
     void on_Access_Finger_button_clicked();
+
+    void on_Connect_Button_clicked();
+
+    void on_ConnectWin_Button_clicked();
 
 private:
     Ui::fota *ui;

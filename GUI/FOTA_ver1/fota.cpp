@@ -85,7 +85,7 @@ fota::~fota(){
 /// \return void
 void fota::on_Server_pushButton_clicked()
 {
-    QString link="https://ide-38fcee10a9aa4a99958ad33bccd7abde-8080.cs50.ws/login";
+    QString link="https://fantastic-space-orbit-vrjgwj9vrgq39j9-5000.app.github.dev/login";
     QDesktopServices::openUrl(QUrl(link));
 }
 
@@ -303,4 +303,13 @@ void fota::on_Access_Finger_button_clicked()
             QMessageBox::warning(this,"Access","\"Finger Prin\" t is not exist!" );
         }
     }
+}
+
+
+void fota::on_ConnectWin_Button_clicked()
+{
+    this->hide();
+    MainWindow *mWin = new MainWindow();
+    mWin->show();
+
 }

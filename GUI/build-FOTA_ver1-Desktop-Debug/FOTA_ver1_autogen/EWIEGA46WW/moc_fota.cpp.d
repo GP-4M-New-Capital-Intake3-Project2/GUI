@@ -1,5 +1,7 @@
 /home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/FOTA_ver1_autogen/EWIEGA46WW/moc_fota.cpp: /home/islam_pi/GUI/FOTA_ver1/fota.h \
   /home/islam_pi/GUI/build-FOTA_ver1-Desktop-Debug/FOTA_ver1_autogen/moc_predefs.h \
+  /home/islam_pi/GUI/FOTA_ver1/fota.h \
+  /home/islam_pi/GUI/FOTA_ver1/mainwindow.h \
   /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
   /usr/include/aarch64-linux-gnu/bits/endian.h \
   /usr/include/aarch64-linux-gnu/bits/endianness.h \

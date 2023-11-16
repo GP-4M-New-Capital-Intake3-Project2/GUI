@@ -141,9 +141,9 @@ background:rgb(0, 80, 0)
     <widget class="QPushButton" name="Close_Button">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>300</x>
        <y>150</y>
-       <width>91</width>
+       <width>171</width>
        <height>51</height>
       </rect>
      </property>
@@ -162,7 +162,7 @@ background:rgb(255, 0, 0)
 }</string>
      </property>
      <property name="text">
-      <string>Close</string>
+      <string>Cancel Connection</string>
      </property>
     </widget>
    </widget>

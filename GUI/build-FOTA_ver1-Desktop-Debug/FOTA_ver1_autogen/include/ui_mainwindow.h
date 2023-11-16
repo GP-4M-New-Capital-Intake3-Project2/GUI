@@ -91,7 +91,7 @@ public:
 "}"));
         Close_Button = new QPushButton(groupBox);
         Close_Button->setObjectName(QString::fromUtf8("Close_Button"));
-        Close_Button->setGeometry(QRect(320, 150, 91, 51));
+        Close_Button->setGeometry(QRect(300, 150, 171, 51));
         Close_Button->setFont(font);
         Close_Button->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "background:rgb(255, 0, 0)\n"
@@ -127,7 +127,7 @@ public:
         SSID_label->setText(QCoreApplication::translate("MainWindow", "SSID", nullptr));
         Password_label->setText(QCoreApplication::translate("MainWindow", "Password", nullptr));
         Connect_Button->setText(QCoreApplication::translate("MainWindow", "Connect", nullptr));
-        Close_Button->setText(QCoreApplication::translate("MainWindow", "Close", nullptr));
+        Close_Button->setText(QCoreApplication::translate("MainWindow", "Cancel Connection", nullptr));
         FOTAApp_label->setText(QCoreApplication::translate("MainWindow", "FOTA Application", nullptr));
     } // retranslateUi
 
